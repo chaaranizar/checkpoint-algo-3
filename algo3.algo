@@ -1,0 +1,19 @@
+PROCEDURE dot_product(n :INTEGER, var x,y: ARRAY_OF INTEGER)
+VAR
+    n :integerv:=10;
+    cMat:INTEGER;
+BEGIN
+    x:= ones(n, 1);
+    y:= 2*ones(n, 1);
+    cMat:= dot(x,y);
+END
+ALGORITHM dot product
+VAR
+v1 : ARRAY_OF INTEGER[10];
+v2 : ARRAY_OF INTEGER[10];
+n : INTEGER;
+BEGIN
+    read(v1);
+    read(v2);
+    dot_product (n,v1,v2);
+END
